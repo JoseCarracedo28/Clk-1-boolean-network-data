@@ -1,0 +1,4 @@
+To load an sbml file in R you need to install the boolnet package and the use the function loadsbml to load the network, below you Will find an example: 
+loadSBML("clk1 network configuration 1.sbml")
+
+.sbml files can be loaded in other tools for boolean network analysis  
