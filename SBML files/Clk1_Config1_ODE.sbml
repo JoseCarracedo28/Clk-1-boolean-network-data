@@ -1,0 +1,1667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" 
+      xmlns:math="http://www.w3.org/1998/Math/MathML"
+      level="3" version="2">
+  <model id="Clk1_Config1" name="Clk-1 Network Configuration 1 ODE Model" timeUnits="dimensionless" extentUnits="dimensionless">
+    
+    <!-- Compartments -->
+    <listOfCompartments>
+      <compartment id="cell" name="cell" spatialDimensions="3" size="1" constant="true"/>
+    </listOfCompartments>
+    
+    <!-- Species (state variables) -->
+    <listOfSpecies>
+      <species id="clk1" name="clk1" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="ETC" name="ETC" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="pink1" name="pink1" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="skn1" name="skn1" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="taf4" name="taf4" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="met" name="met" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="hlh11" name="hlh11" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="unc51" name="unc51" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="hlh30" name="hlh30" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="creb" name="creb" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="UP" name="UP" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="ATG" name="ATG" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="lipl4" name="lipl4" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MTG" name="MTG" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="fzo1" name="fzo1" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="clpp1" name="clpp1" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="LDs" name="LDs" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="ETC2" name="ETC2" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="atfs1" name="atfs1" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="ros" name="ros" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="hsp60" name="hsp60" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="hif1" name="hif1" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="atgl1" name="atgl1" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="lip" name="lip" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="betaox" name="betaox" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="ATP" name="ATP" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="crtc1" name="crtc1" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="mtor" name="mtor" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="ampk" name="ampk" compartment="cell" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    
+    <!-- Parameters -->
+    <listOfParameters>
+      <parameter id="h" name="h" value="20" constant="true"/>
+      <parameter id="b" name="b" value="0.5" constant="true"/>
+      <parameter id="alphaclk1" name="alphaclk1" value="1" constant="true"/>
+      <parameter id="alphaETC" name="alphaETC" value="1" constant="true"/>
+      <parameter id="alphapink1" name="alphapink1" value="1" constant="true"/>
+      <parameter id="alphaskn1" name="alphaskn1" value="1" constant="true"/>
+      <parameter id="alphataf4" name="alphataf4" value="1" constant="true"/>
+      <parameter id="alphamet" name="alphamet" value="1" constant="true"/>
+      <parameter id="alphahlh11" name="alphahlh11" value="1" constant="true"/>
+      <parameter id="alphaunc51" name="alphaunc51" value="1" constant="true"/>
+      <parameter id="alphahlh30" name="alphahlh30" value="1" constant="true"/>
+      <parameter id="alphacreb" name="alphacreb" value="1" constant="true"/>
+      <parameter id="alphaUP" name="alphaUP" value="1" constant="true"/>
+      <parameter id="alphaATG" name="alphaATG" value="1" constant="true"/>
+      <parameter id="alphalipl4" name="alphalipl4" value="1" constant="true"/>
+      <parameter id="alphaMTG" name="alphaMTG" value="1" constant="true"/>
+      <parameter id="alphafzo1" name="alphafzo1" value="1" constant="true"/>
+      <parameter id="alphaclpp1" name="alphaclpp1" value="1" constant="true"/>
+      <parameter id="alphaLDs" name="alphaLDs" value="1" constant="true"/>
+      <parameter id="alphaETC2" name="alphaETC2" value="1" constant="true"/>
+      <parameter id="alphaatfs1" name="alphaatfs1" value="1" constant="true"/>
+      <parameter id="alpharos" name="alpharos" value="1" constant="true"/>
+      <parameter id="alphahsp60" name="alphahsp60" value="1" constant="true"/>
+      <parameter id="alphahif1" name="alphahif1" value="1" constant="true"/>
+      <parameter id="alphaatgl1" name="alphaatgl1" value="1" constant="true"/>
+      <parameter id="alphalip" name="alphalip" value="1" constant="true"/>
+      <parameter id="alphabetaox" name="alphabetaox" value="1" constant="true"/>
+      <parameter id="alphaATP" name="alphaATP" value="1" constant="true"/>
+      <parameter id="alphacrtc1" name="alphacrtc1" value="1" constant="true"/>
+      <parameter id="alphamtor" name="alphamtor" value="1" constant="true"/>
+      <parameter id="alphaampk" name="alphaampk" value="1" constant="true"/>
+    </listOfParameters>
+    
+    <!-- Assignment Rules for weight variables (w_X) -->
+    <listOfRules>
+      <assignmentRule variable="w_clk1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <cn>0</cn>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_ETC">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci>clk1</ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_pink1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <cn>1</cn>
+            <ci>ETC</ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_skn1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <max/>
+            <apply>
+              <min/>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>ETC</ci>
+              </apply>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>ros</ci>
+              </apply>
+            </apply>
+            <apply>
+              <min/>
+              <ci>ETC</ci>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>ros</ci>
+              </apply>
+            </apply>
+            <apply>
+              <min/>
+              <ci>ETC</ci>
+              <ci>ros</ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_taf4">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <cn>1</cn>
+            <ci>clk1</ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_met">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <cn>1</cn>
+            <ci>hif1</ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_hlh11">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <min/>
+            <apply>
+              <minus/>
+              <cn>1</cn>
+              <ci>atfs1</ci>
+            </apply>
+            <apply>
+              <minus/>
+              <cn>1</cn>
+              <ci>mtor</ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_unc51">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <min/>
+            <ci>mtor</ci>
+            <apply>
+              <minus/>
+              <cn>1</cn>
+              <ci>ampk</ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_hlh30">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <cn>1</cn>
+            <ci>mtor</ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_creb">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <min/>
+            <apply>
+              <minus/>
+              <cn>1</cn>
+              <ci>taf4</ci>
+            </apply>
+            <ci>crtc1</ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_UP">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <max/>
+            <apply>
+              <min/>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>clk1</ci>
+              </apply>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>ETC2</ci>
+              </apply>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>hsp60</ci>
+              </apply>
+            </apply>
+            <apply>
+              <min/>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>clk1</ci>
+              </apply>
+              <ci>ETC2</ci>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>hsp60</ci>
+              </apply>
+            </apply>
+            <apply>
+              <min/>
+              <ci>clk1</ci>
+              <ci>ETC2</ci>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>hsp60</ci>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_ATG">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <min/>
+            <ci>unc51</ci>
+            <ci>hlh30</ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_lipl4">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci>hlh30</ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_MTG">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <min/>
+            <ci>pink1</ci>
+            <ci>skn1</ci>
+            <ci>unc51</ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_fzo1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci>creb</ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_clpp1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci>UP</ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_LDs">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci>ATG</ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_ETC2">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <min/>
+            <ci>MTG</ci>
+            <ci>fzo1</ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_atfs1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci>clpp1</ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_ros">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <max/>
+            <apply>
+              <min/>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>clk1</ci>
+              </apply>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>ETC2</ci>
+              </apply>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>ampk</ci>
+              </apply>
+            </apply>
+            <apply>
+              <min/>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>clk1</ci>
+              </apply>
+              <ci>ETC2</ci>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>ampk</ci>
+              </apply>
+            </apply>
+            <apply>
+              <min/>
+              <ci>clk1</ci>
+              <ci>ETC2</ci>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>ampk</ci>
+              </apply>
+            </apply>
+            <apply>
+              <min/>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>clk1</ci>
+              </apply>
+              <ci>ETC2</ci>
+              <ci>ampk</ci>
+            </apply>
+            <apply>
+              <min/>
+              <ci>clk1</ci>
+              <ci>ETC2</ci>
+              <ci>ampk</ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_hsp60">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci>atfs1</ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_hif1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci>ros</ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_atgl1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <cn>1</cn>
+            <ci>hlh11</ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_lip">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <min/>
+            <ci>lipl4</ci>
+            <ci>LDs</ci>
+            <ci>atgl1</ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_betaox">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci>lip</ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_ATP">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <max/>
+            <apply>
+              <min/>
+              <ci>ETC</ci>
+              <ci>ETC2</ci>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>betaox</ci>
+              </apply>
+            </apply>
+            <apply>
+              <min/>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>ETC</ci>
+              </apply>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>ETC2</ci>
+              </apply>
+              <ci>betaox</ci>
+            </apply>
+            <apply>
+              <min/>
+              <ci>ETC</ci>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>ETC2</ci>
+              </apply>
+              <ci>betaox</ci>
+            </apply>
+            <apply>
+              <min/>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>ETC</ci>
+              </apply>
+              <ci>ETC2</ci>
+              <ci>betaox</ci>
+            </apply>
+            <apply>
+              <min/>
+              <ci>ETC</ci>
+              <ci>ETC2</ci>
+              <ci>betaox</ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_crtc1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <cn>1</cn>
+            <ci>ampk</ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_mtor">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <min/>
+            <apply>
+              <minus/>
+              <cn>1</cn>
+              <ci>unc51</ci>
+            </apply>
+            <apply>
+              <minus/>
+              <cn>1</cn>
+              <ci>ampk</ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="w_ampk">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <max/>
+            <apply>
+              <min/>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>ros</ci>
+              </apply>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>hif1</ci>
+              </apply>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>ATP</ci>
+              </apply>
+            </apply>
+            <apply>
+              <min/>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>ros</ci>
+              </apply>
+              <ci>hif1</ci>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>ATP</ci>
+              </apply>
+            </apply>
+            <apply>
+              <min/>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>ros</ci>
+              </apply>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>hif1</ci>
+              </apply>
+              <ci>ATP</ci>
+            </apply>
+            <apply>
+              <min/>
+              <ci>ros</ci>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>hif1</ci>
+              </apply>
+              <ci>ATP</ci>
+            </apply>
+            <apply>
+              <min/>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+                <ci>ros</ci>
+              </apply>
+              <ci>hif1</ci>
+              <ci>ATP</ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <rateRule variable="clk1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_clk1</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_clk1</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphaclk1</ci>
+              <ci>clk1</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="ETC">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_ETC</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_ETC</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphaETC</ci>
+              <ci>ETC</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="pink1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_pink1</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_pink1</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphapink1</ci>
+              <ci>pink1</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="skn1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_skn1</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_skn1</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphaskn1</ci>
+              <ci>skn1</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="taf4">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_taf4</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_taf4</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphataf4</ci>
+              <ci>taf4</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="met">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_met</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_met</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphamet</ci>
+              <ci>met</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="hlh11">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_hlh11</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_hlh11</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphahlh11</ci>
+              <ci>hlh11</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="unc51">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_unc51</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_unc51</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphaunc51</ci>
+              <ci>unc51</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="hlh30">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_hlh30</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_hlh30</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphahlh30</ci>
+              <ci>hlh30</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="creb">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_creb</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_creb</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphacreb</ci>
+              <ci>creb</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="UP">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_UP</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_UP</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphaUP</ci>
+              <ci>UP</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="ATG">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_ATG</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_ATG</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphaATG</ci>
+              <ci>ATG</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="lipl4">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_lipl4</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_lipl4</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphalipl4</ci>
+              <ci>lipl4</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="MTG">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_MTG</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_MTG</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphaMTG</ci>
+              <ci>MTG</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="fzo1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_fzo1</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_fzo1</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphafzo1</ci>
+              <ci>fzo1</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="clpp1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_clpp1</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_clpp1</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphaclpp1</ci>
+              <ci>clpp1</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="LDs">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_LDs</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_LDs</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphaLDs</ci>
+              <ci>LDs</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="ETC2">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_ETC2</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_ETC2</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphaETC2</ci>
+              <ci>ETC2</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="atfs1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_atfs1</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_atfs1</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphaatfs1</ci>
+              <ci>atfs1</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="ros">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_ros</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_ros</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alpharos</ci>
+              <ci>ros</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="hsp60">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_hsp60</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_hsp60</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphahsp60</ci>
+              <ci>hsp60</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="hif1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_hif1</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_hif1</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphahif1</ci>
+              <ci>hif1</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="atgl1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_atgl1</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_atgl1</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphaatgl1</ci>
+              <ci>atgl1</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="lip">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_lip</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_lip</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphalip</ci>
+              <ci>lip</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="betaox">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_betaox</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_betaox</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphabetaox</ci>
+              <ci>betaox</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="ATP">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_ATP</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_ATP</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphaATP</ci>
+              <ci>ATP</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="crtc1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_crtc1</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_crtc1</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphacrtc1</ci>
+              <ci>crtc1</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="mtor">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_mtor</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_mtor</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphamtor</ci>
+              <ci>mtor</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="ampk">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <!-- Sigmoid activation term -->
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply><exp/><apply><minus/><apply><times/><ci>h</ci><ci>w_ampk</ci></apply></apply></apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><times/><cn>0.5</cn><ci>h</ci></apply></apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn>1</cn>
+                  <apply><exp/><apply><minus/><apply><times/><ci>h</ci><apply><minus/><ci>w_ampk</ci><cn>0.5</cn></apply></apply></apply></apply>
+                </apply>
+              </apply>
+            </apply>
+            <!-- Decay term: alpha * X -->
+            <apply>
+              <times/>
+              <ci>alphaampk</ci>
+              <ci>ampk</ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+    </listOfRules>
+    
+  </model>
+</sbml>
